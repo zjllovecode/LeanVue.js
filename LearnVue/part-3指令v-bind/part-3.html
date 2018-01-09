@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>part-3... v-bind指令</title>
+    <style>
+        .active {
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+        .text-danger {
+            width: 200px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <!-- 指定href -->
+    <a v-bind:href="url">点我</a>
+    <!-- 指定img style,可以定义在vuez中也可以直接指定-->
+    <div>
+        <img v-bind:src="img" v-bind:style="imgSize">
+    </div>
+    <!-- 指定class 可以有逻辑判断-->
+    <div>
+        <p v-bind:class="{ active: isActive }">LaLa-Land</p>
+    </div>
+    <!-- 数组的方式指定多个class，重复属性将会覆盖-->
+    <div v-bind:class="[activeClass , errorClass ]">
+        <p>I miss you</p>
+    </div>
+</div>
+
+</body>
+<script src="../lib/vue.js"></script>
+<script src="js/part-3.js"></script>
+</html>

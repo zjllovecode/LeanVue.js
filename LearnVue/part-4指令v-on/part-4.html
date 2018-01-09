@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>part-4....v-on指令</title>
+</head>
+<body>
+<div>
+    <button id="bt1" v-on:click="onClick">绑定单个事件</button>
+    <button id="bt2" v-on="{mouseenter: onEnter,mouseleave: onOut}">测试绑定多个事件</button>
+</div>
+</body>
+<script src="../lib/vue.js"></script>
+<script src="js/part-4.js"></script>
+</html>

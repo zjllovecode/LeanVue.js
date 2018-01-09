@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>part-2...v-for</title>
+</head>
+<body>
+<div>
+    <ul>
+        <li v-for="food in foodList">{{food.name}}: ￥ {{food.discount? food.price*food.discount : food.price}}</li>
+    </ul>
+</div>
+</body>
+<script src="../lib/vue.js"></script>
+<script src="js/part-2.js"></script>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>part-11..过滤器</title>
+</head>
+<body>
+<div id="app">
+    <input v-model="price">
+    {{price | currency('USD')}}
+</div>
+
++
+</body>
+<script src="../lib/vue.js"></script>
+<script src="js/part-11.js"></script>
+</html>

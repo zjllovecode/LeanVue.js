@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>part-7...组件的配置</title>
+</head>
+<body>
+<h3>组件的配置</h3>
+
+<div id="seg1">
+    <p>点赞不求人的啦!</p>
+    <like></like>
+    <p>点赞不求人的啦!不共享data示例</p>
+    <like></like>
+</div>
+
+<div id="seg2">
+    <P>控制点赞数量</P>
+    <like_only></like_only>
+</div>
+
+<div id="seg3">
+    <p>将模版提取出来放到html里，在js 中定义时只需要引用相应的id/class</p>
+    <like_other_way></like_other_way>
+</div>
+
+<template id="like-other-way">
+    <button v-on:click="toggle_like">赞:{{like_count}}</button>
+</template>
+</body>
+<script src="../lib/vue.js"></script>
+<script src="js/part-7.js"></script>
+</html>

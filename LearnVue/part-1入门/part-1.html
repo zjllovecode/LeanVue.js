@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>part-1..HelloWorld</title>
+</head>
+<body>
+    <div id="app">
+        <div>
+            <span>我的名字是：{{1+1}}</span>
+        </div>
+        <div>
+            <input type="text" v-model="name">
+            <span>你的名字是: {{name}} </span>
+        </div>
+
+        <div>
+            <input type="text" v-model="age">
+            <span v-show="age">你的年龄：{{age}}</span>
+        </div>
+        <div>
+            <input type="text" v-model="sex">
+            <span v-if="sex">你的性别：{{sex}}</span>
+        </div>
+    </div>
+</body>
+<!-- 从CDN上获取 -->
+<!--<script src="https://cdn.bootcss.com/vue/2.5.13/vue.js"></script>-->
+<!-- 引入本地下载好的vue.js -->
+<script src="../lib/vue.js"></script>
+<script src="js/part-1.js"></script>
+</html>
